@@ -16,16 +16,14 @@ The script goes like this:
         return new Promise(resolve => setTimeout(resolve, ms));
       }
       async function select() {
-        var inputs = document.getElementsByClassName('_1pu2 _1pu4'); 
-        while(inputs.length>0){
+        do{
+          var inputs = document.getElementsByClassName('_1pu2 _1pu4'); 
           //console.log(inputs.length);
           for(var i=0;i<inputs.length;i++) { 
             inputs[i].click(); 
             await sleep(1);   //Neccessary for the upwards counting effect
           }
-
-          inputs = document.getElementsByClassName('_1pu2 _1pu4'); 
-        }
+        } while(inputs.length>0);
       }
       select();
       
