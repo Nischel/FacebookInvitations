@@ -1,4 +1,4 @@
-# FacebookInvitations
+# Facebook Invitations
 Script for quick-selecting all people in a to-invite list
 
 1. Create a new event
@@ -40,3 +40,4 @@ Some tips:
 - Facebook only allows 500 invitations per day
 - The name of the Button ('_1pu2 _1pu4') may change in the future. It has already changed in the past. Please notify me here or on facebook if the script doesn't work anymore. It will probably because of this.
 - There is a chrome extension for this but it had some bad reviews. No idea, it may do exactly the same. 
+- Sometimes there is a "select all" function already offered by facebook. No idea why it is not always there...
