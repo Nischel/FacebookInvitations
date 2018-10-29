@@ -13,18 +13,24 @@ Script for quick-selecting all people in a to-invite list
 The script goes like this:
 
       function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
+            return new Promise(resolve => setTimeout(resolve, ms));
       }
+      
       async function select() {
-        do {
-          var buttons = document.getElementsByClassName('_1pu2 _1pu4'); 
-          //console.log(buttons.length);
-          for (var i=0;i<buttons.length;i++) { 
-            buttons[i].click(); 
-            await sleep(1);   //Neccessary for the upwards counting effect
-          }
-        } while(buttons.length>0);
+            do {
+                  var buttons = document.getElementsByClassName('_1pu2 _1pu4'); 
+                  
+                  //console.log(buttons.length);
+                  
+                  for (var i=0;i<buttons.length;i++) { 
+                        buttons[i].click(); 
+                        await sleep(1);   //Neccessary for the upwards counting effect
+                  }
+                  
+            } while(buttons.length>0);
+            
       }
+      
       select();
       
 You enter it in the browsers javascript-console. You access it on Firefox via F12, on Chrom via Ctrl+Shift+J. Probably you have to declare yourself a web-developer by clicking ok if it is your first time doing such things.
