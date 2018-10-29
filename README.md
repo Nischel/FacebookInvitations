@@ -22,12 +22,12 @@ The script goes like this:
                   
                   //console.log(buttons.length);
                   
-                  for (var i=0;i<buttons.length;i++) { 
+                  for (var i=0; i < buttons.length; i++) { 
                         buttons[i].click(); 
                         await sleep(1);   //Neccessary for the upwards counting effect
                   }
                   
-            } while(buttons.length>0);
+            } while (buttons.length > 0);
             
       }
       
